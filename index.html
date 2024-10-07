@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en" {
+  min-height: 100%;
+}
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     * {
       border: 1px red dashed;
     }
+    html {
+  min-height: 100%;
+}
+
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 </head>
 <body>
   <style>
     body {
+      min-height: 100%;
       padding-top: 40px;
       padding-bottom: 40px;
-    }
+      font-family: "Verdana";
+      background: linear-gradient(90deg, #003f5b, #01616f, #02847b, #059c6b, #4fb409, #c3cc0c, #e6b40f, #ff9913); /* made at https://learnui.design/tools/gradient-generator.html */
+
+  color: rgba(255, 255, 255, 1.0);
+
+a {
+  color: rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+}
+.item {
+  background-color: rgba(114, 195, 223, 0.8);
+}
+.image-row {
+  margin-bottom: 20px;
+}
+
+.name-row {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Georgia";
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.main-container {
+  max-width: 640px;
+  margin: auto;
+}
+.link-text {
+  text-align: center;
+  flex-grow:1;
+}
   </style>
   <div class="main-container">
     <div class="image-row">
@@ -37,11 +88,11 @@
 
     <div class="social-icons-row">
       <a href="https://www.linkedin.com/in/julia-craig-4a2192233" target="_blank">
-        LinkedIn
+        <i class="fa-brands fa-linkedin"></i>LinkedIn
       </a>
 
       <a href="https://www.instagram.com/juliaa.craig/?hl=en" target="_blank">
-        Instagram
+        <i class="fa-brands fa-instagram"></i>Instagram
       </a>
 
     </div>
@@ -58,7 +109,7 @@
 }
         </style>
 
-        <a target="_blank" href="https://www.npr.org/series/490248027/how-i-built-this">
+        <a class="link text" target="_blank" href="https://www.npr.org/series/490248027/how-i-built-this">
           How I Built This Podcast
         </a>
       </div>
@@ -71,6 +122,10 @@
   height: 48px;
   border-radius: 48px;
   object-fit: cover;
+}
+.link-text {
+  text-align: center;
+  flex-grow:1;
 }
         </style>
 
